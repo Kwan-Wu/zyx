@@ -1,0 +1,29 @@
+.search{
+    position: relative;
+    width: 1108px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.search.community{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background-color: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0,0,0, .5);
+    transition: .3s ease-in-out;
+}
+.search.community:hover{
+    height: 400px;
+}
+.p{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: -20px;
+}

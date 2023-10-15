@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+} 
+.container{
+    display: flex;
+    background-color: khaki;
+    height: 1400px;
+    position: relative;
+}
+.navbar{
+    position: relative;
+    width: 193px;
+}
+#checkbox{
+    display: none;
+}
+.navbar label{
+    position: relative;
+    top: 0;
+    left: 70px;
+    height: 26px;
+    font-size: 20px;
+    color: #5a738e;
+    background-color: #ededed;
+    padding-left: 20px;
+    border: 1px solid #d9dee4;
+    cursor: pointer;
+    transition: all .5s;
+}
+.navbar ul{
+    list-style: none; 
+    width: 70px;
+    height: 100vh;
+    background-color: darkslategrey;
+    overflow: hidden;
+}
+.navbar ul li{ 
+    height: 70px;
+    margin-bottom: 10px; 
+} 
+.navbar ul li:first-child{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+.navbar ul li:first-child img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.navbar ul li:first-child span{
+    color: #fff;
+    white-space: nowrap;
+    padding-left: 10px;
+    display: none;
+}
+.navbar ul li a{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: #d1d1d1;
+    text-decoration: none;
+}
+.navbar ul li a i{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.navbar ul li a span{
+    white-space: nowrap;
+    font-size: 14px;
+}
+ .navbar ul li a:hover{
+    color: #fff;
+    background-color: #5a738e;
+}
+.navbar input:checked+label{
+    left: 193px;
+}
+.navbar input:checked ~ ul{
+    width: 193px;
+}
+.navbar input:checked ~ ul:first-child{
+    justify-content: flex-start;
+}
+.navbar input:checked ~ ul:first-child span{
+    display: block;
+} 
+
+.right-box
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    position: absolute;
+    left: 193px;
+    right: 200px;
+    width: 1100px;
+    height:200px;
+    margin-top: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #5a738e;
+}
+.main{
+    position: absolute;
+    top: 300px;
+    left: 193px;
+    right: 200px;
+}
+.name{
+    font-family: system-ui;
+    font-size: 50px;
+    font-weight: bold;
+}
+.des{
+    font-family: system-ui;
+    font-size: 40px;
+    font-weight: bold;
+}
+.jb{
+    display: flex;
+    width: 1100px;
+    background-color: #eef1f4;
+}
+.l{
+    align-content: flex-end;
+    margin-right: 15px;
+    height: vh;
+}
+.introduction{
+    font-size: 15px;
+}
+.P-box{
+    width: 1220px;
+}
+.P-box li{
+    list-style: none;
+    position: relative;
+    width: 400px;
+    height: 260px;
+    float: left;
+    margin: 5px 10px 5px 0;
+    overflow: hidden;
+}
+.P-box li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: .25s ease-in;
+}
+.P-box li p{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.75);
+    position: absolute;
+    left: 0;
+    top:-100%;
+    color: #aaa;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    line-height: 24px;
+}
+.P-box li:hover img{
+    transform: scale(1.1);
+}
+.P-box li:nth-child(3){
+    margin-right: 0;
+    width: 400px;
+    height: 530px;
+}
+.P-box li:nth-child(4),
+.P-box li:nth-child(5){
+    margin-top: -265px;
+}
+.P-box li:nth-child(5){
+    margin-left: 410px;
+}
+.P-box li:nth-child(8){
+    margin-right: 0;
+}
